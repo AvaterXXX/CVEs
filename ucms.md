@@ -43,3 +43,17 @@ After logging in, use POC to create an administrator account.
 </html>
 
 ```
+---------------------------------------------------
+# XSS2
+The vulnerability code is located in `ucms_1.4.7\ucms\sadmin\cedit.php`
+![](https://github.com/AvaterXXX/CVEs/blob/master/images/ucms_xss_2-1.png)
+
+You can see that the htmlspecialchars function is used below to filter, but the above is not filtered, so XSS exists.
+![](https://github.com/AvaterXXX/CVEs/blob/master/images/ucms_xss_2-2.png)
+![](https://github.com/AvaterXXX/CVEs/blob/master/images/ucms_xss_2-3.png)
+
+-----------------------------------------------------
+# XSS3
+The causes of the vulnerabilities are similar, all are unfiltered code, no more specific analysis here.
+![](https://github.com/AvaterXXX/CVEs/blob/master/images/ucms_xss_3-1.png)
+![](https://github.com/AvaterXXX/CVEs/blob/master/images/ucms_xss_3-2.png)
